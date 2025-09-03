@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>맘스토리 · Mom Story</title>
+  <meta name="description" content="임신·출산·육아 정책과 생활 정보를 한곳에 모은 맘스토리." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 상단 구독바 -->
+  <div class="topbar" role="region" aria-label="구독 안내">
+    <a href="#newsletter" class="topbar-link">맘스토리 구독하기</a>
+  </div>
+
+  <!-- 헤더/네비게이션 -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <nav class="nav" aria-label="주 메뉴">
+        <button class="hamburger" id="navToggle" aria-expanded="false" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="navList">
+          <li><a href="#latest" class="nav-link is-active">최신정책</a></li>
+          <li><a href="#guide" class="nav-link">임신 가이드</a></li>
+          <li><a href="#birth" class="nav-link">출산정보</a></li>
+          <li><a href="#life" class="nav-link">육아라이프</a></li>
+          <li><a href="#board" class="nav-link">자유게시판</a></li>
+        </ul>
+      </nav>
+      <div class="nav-tools">
+        <button class="icon-btn" aria-label="검색 열기">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/>
+            <line x1="16.5" y1="16.5" x2="22" y2="22" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </button>
+        <a href="#login" class="login">로그인</a>
+      </div>
+    </div>
+    <div class="divider"></div>
+  </header>
+
+  <main id="main">
+    <!-- 중앙 원형 로고 -->
+    <section class="hero" aria-label="브랜드 로고">
+      <div class="hero-circle">
+        <img src="image 2.png" alt="Mom Story 로고">
+      </div>
+    </section>
+
+    <!-- 소개 타이틀 -->
+    <section class="container intro">
+      <h2 class="intro-title">맘스토리를 소개해요</h2>
+    </section>
+
+    <!-- 카드 그리드 2×2 -->
+    <section class="container grid-2">
+      <!-- 최신정책 -->
+      <article id="latest" class="feature-card">
+        <img src="images/1.jpg" alt="최신 정책 브리핑 장면">
+        <div class="fc-body">
+          <h3>최신정보</h3>
+          <p>세부, 변경, 공고, 신청/접수 등 임신·출산·육아 지원 소식을 브리핑합니다. 바뀌었거나 새로 생긴 정책을 빠르게 정리해 커뮤니티와 함께 필요한 혜택을 놓치지 않게 도와요.</p>
+          <a class="btn primary" href="#latest-more">자세히 보기</a>
+        </div>
+      </article>
+
+      <!-- 임신 가이드 -->
+      <article id="guide" class="feature-card">
+        <img src="images/2.png" alt="모바일로 정보를 확인하는 손">
+        <div class="fc-body">
+          <h3>임신가이드</h3>
+          <p>임신주차별 체크리스트, 산전 검사와 식단, 병원 선택 팁까지 한 번에. 병원 준비물, 복지 수당·지원금 신청 흐름도도 쉽게 따라 하도록 만들었어요.</p>
+          <a class="btn outline" href="#guide-more">임신 가이드 살펴보기</a>
+        </div>
+      </article>
+
+      <!-- 출산정보 -->
+      <article id="birth" class="feature-card">
+        <img src="images/3.jpg" alt="산부인과 상담 이미지">
+        <div class="fc-body">
+          <h3>출산정보</h3>
+          <p>출산 준비물부터 출산 후 회복 플랜까지 전문가 인터뷰와 경험담을 모았어요. 출산지원금, 출생신고, 산후조리 체크리스트까지 한곳에서!</p>
+          <a class="btn outline" href="#birth-more">출산정보 알아보기</a>
+        </div>
+      </article>
+
+      <!-- 육아라이프 -->
+      <article id="life" class="feature-card">
+        <img src="images/4.jpeg" alt="앱을 보여주는 손">
+        <div class="fc-body">
+          <h3>육아라이프</h3>
+          <p>도시락 레시피, 절약 팁, 핫딜, 실사용 후기를 담은 생활형 콘텐츠. 가계에 보탬 되는 정보와 소소한 행복을 기록해요.</p>
+          <a class="btn outline" href="#life-more">육아 라이프 구경하기</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- 플로팅 채팅 버튼 (데모) -->
+  <button class="chat-fab" aria-label="채팅 열기">
+    <img src="img/chat-widget.svg" alt="" aria-hidden="true">
+  </button>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mom Story</p>
+    </div>
+  </footer>
+
+  <script defer src="main.js"></script>
+</body>
+</html>
